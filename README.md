@@ -7,3 +7,4 @@ In this Tutorial we'll be scraping data from this website - http://swachhbharatu
 Hitting F12 opens up the developer window
 ![Network tab](https://drive.google.com/open?id=1uBB8aeEoKgQqsFeRoKgU0TzefcVXN-NC)
 
+
