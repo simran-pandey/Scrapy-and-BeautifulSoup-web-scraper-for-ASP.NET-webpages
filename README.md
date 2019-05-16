@@ -5,6 +5,7 @@ Scraping aspx form based webpage is different and slightly complex than the usua
 In this Tutorial we'll be scraping data from this website - http://swachhbharaturban.gov.in/ihhl/RPTApplicationSummary.aspx
 
 Hitting F12 opens up the developer window
-![Network tab](https://drive.google.com/open?id=1uBB8aeEoKgQqsFeRoKgU0TzefcVXN-NC)
-
-
+![](https://github.com/simran-pandey/Web-Scraper/blob/master/Screen%20captures/ss-3.PNG)
+![](https://github.com/simran-pandey/Web-Scraper/blob/master/Screen%20captures/ss-4.PNG)
+![](https://github.com/simran-pandey/Web-Scraper/blob/master/Screen%20captures/ss-5.PNG)
+![](https://github.com/simran-pandey/Web-Scraper/blob/master/Screen%20captures/ss-6.PNG)
