@@ -4,11 +4,11 @@ Scraping aspx form based webpage is different and slightly complex than scraping
 
 In this project we'll be scraping data from this website - http://swachhbharaturban.gov.in/ihhl/RPTApplicationSummary.aspx
 
-We are interested in creating a csv file where the scarped data will get saved and the headers will look like this	 		 	 	 	 	 	 	 	 	 	 
+We are interested in creating a csv file where the scarped data will get saved with headers in this order		 	 	 	 	 	 	 	 	 
 
 State | District | ULB Name | Ward | No. of Applications Received | No. of Applications Not Verified | No. of Applications Verified | No. of Applications Approved | No. of Applications Approved having Aadhar No. | No. of Applications Rejected | No. of Applications Pullback | No. of Applications Closed | No. of Constructed Toilet Photo | No. of Commenced Toilet Photo | No. of Constructed Toilet Photo through Swachhalaya
 
-Hitting F12 opens up the developer window (Netwrok tab)  
+Pressing F12 opens up the developer window (Network tab)  
 
 ![](https://github.com/simran-pandey/Web-Scraper/blob/master/Screen%20captures/ss-3.PNG)
 
@@ -30,9 +30,22 @@ Fetch http://swachhbharaturban.gov.in/ihhl/RPTApplicationSummary.aspx
 * For each state found in the form's state list:
     * Create a POST request to RPTApplicationSummary.aspx passing the selected state and the __VIEWSTATE value
 * For each District found in the resulting page:
-    * Issue a POST request to RPTApplicationSummary.aspx passing the selected state, selected district and view state
+    * Issue a POST request to RPTApplicationSummary.aspx passing the selected state, selected district and __VIEWSTATE value
 * For each ULB found in the resulting page:
-    * Issue a POST request to RPTApplicationSummary.aspx passing the selected state, selected district, selected ULB and view state
+    * Issue a POST request to RPTApplicationSummary.aspx passing the selected state, selected district, selected ULB and __VIEWSTATE value
 * Scrape the resulting pages ward wise appending data to a CSV file
 
+Requisite tools 
+* Python
+    * follow my tutorial [here](https://medium.com/@pandeysimran97/installing-anaconda-navigator-in-5-simple-steps-for-deep-learning-projects-c7c794f1768d)
+* pip - package-management system used to install and manage software packages written in Python
+    * Download get-pip.py to a folder on your computer.
+    * Open a command prompt and navigate to the folder containing get-pip.py.
+    * Run the following command:
+    * python [get-pip.py](https://bootstrap.pypa.io/get-pip.py)
+    * Pip is now installed!
+- Scrapy framework - free and open-source web-crawling framework written in Python.
+    * 
+- BeautifulSoup from bs4 library
+    * pip install beautifulsoup4
 
