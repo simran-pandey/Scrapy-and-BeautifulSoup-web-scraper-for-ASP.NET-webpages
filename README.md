@@ -24,7 +24,21 @@ Finally on Selecting the ULB, you can see the wards under that particular ULB an
 
 ![](https://github.com/simran-pandey/Web-Scraper/blob/master/Screen%20captures/ss-6.PNG)
 
-Before creating the spider we'll create a rough algorithm stating the steps that our spider will traverse:
+#Requisite tools 
+* Python
+    * follow my tutorial [here](https://medium.com/@pandeysimran97/installing-anaconda-navigator-in-5-simple-steps-for-deep-learning-projects-c7c794f1768d)
+* Pip - package-management system used to install and manage software packages written in Python
+    * Download get-pip.py to a folder on your computer.
+    * Open a command prompt and navigate to the folder containing get-pip.py.
+    * Run the following command:
+    * python [get-pip.py](https://bootstrap.pypa.io/get-pip.py)
+    * Pip is now installed!
+- Scrapy framework - free and open-source web-crawling framework written in Python.
+    * $ pip install Scrapy==1.3.3
+- BeautifulSoup from bs4 library
+    * $ pip install beautifulsoup4
+    
+#Before creating the spider we'll create a rough algorithm stating the steps that our spider will traverse:
 
 Fetch http://swachhbharaturban.gov.in/ihhl/RPTApplicationSummary.aspx
 * For each state found in the form's state list:
@@ -34,18 +48,4 @@ Fetch http://swachhbharaturban.gov.in/ihhl/RPTApplicationSummary.aspx
 * For each ULB found in the resulting page:
     * Issue a POST request to RPTApplicationSummary.aspx passing the selected state, selected district, selected ULB and __VIEWSTATE value
 * Scrape the resulting pages ward wise appending data to a CSV file
-
-Requisite tools 
-* Python
-    * follow my tutorial [here](https://medium.com/@pandeysimran97/installing-anaconda-navigator-in-5-simple-steps-for-deep-learning-projects-c7c794f1768d)
-* pip - package-management system used to install and manage software packages written in Python
-    * Download get-pip.py to a folder on your computer.
-    * Open a command prompt and navigate to the folder containing get-pip.py.
-    * Run the following command:
-    * python [get-pip.py](https://bootstrap.pypa.io/get-pip.py)
-    * Pip is now installed!
-- Scrapy framework - free and open-source web-crawling framework written in Python.
-    * 
-- BeautifulSoup from bs4 library
-    * pip install beautifulsoup4
 
