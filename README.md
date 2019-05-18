@@ -12,7 +12,7 @@ Hitting F12 opens up the developer window (Netwrok tab)
 
 ![](https://github.com/simran-pandey/Web-Scraper/blob/master/Screen%20captures/ss-3.PNG)
 
-while the developer window is still open -> select any state - I selected Delhi which fired up a POST request to the server. 
+Select a state from the list and you will see that a request to "RPTApplicationSummary.aspx" has been made. Clicking on the response - RPTApplicationSummary.aspx leads you to the request details where you can see that your browser sent the state you've selected along with the __VIEWSTATE data that was in the original response from the server.
 
 ![](https://github.com/simran-pandey/Web-Scraper/blob/master/Screen%20captures/ss-4.PNG)
 
@@ -23,5 +23,16 @@ On further selecting the District another POST request is sent to the server.
 Finally on Selecting the ULB, you can see the wards under that particular ULB and that's the order of the data that we are interested in. Our spider has to simulate the user interaction of selecting State --> District --> ULB and submitting the form.
 
 ![](https://github.com/simran-pandey/Web-Scraper/blob/master/Screen%20captures/ss-6.PNG)
+
+Before creating the spider we'll create a rough algorithm stating the steps that our spider will traverse:
+
+Fetch http://swachhbharaturban.gov.in/ihhl/RPTApplicationSummary.aspx
+* For each state found in the form's state list:
+    * Create a POST request to RPTApplicationSummary.aspx passing the selected state and the __VIEWSTATE value
+* For each District found in the resulting page:
+    * Issue a POST request to RPTApplicationSummary.aspx passing the selected state, selected district and view state
+* For each ULB found in the resulting page:
+    * Issue a POST request to RPTApplicationSummary.aspx passing the selected state, selected district, selected ULB and view state
+* Scrape the resulting pages ward wise appending data to a CSV file
 
 
