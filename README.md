@@ -24,7 +24,7 @@ Finally on Selecting the ULB, you can see the wards under that particular ULB an
 
 ![](https://github.com/simran-pandey/Web-Scraper/blob/master/Screen%20captures/ss-7.PNG)
 
-#Requisite tools 
+# Requisite tools 
 * Python
     * Follow my tutorial [here](https://medium.com/@pandeysimran97/installing-anaconda-navigator-in-5-simple-steps-for-deep-learning-projects-c7c794f1768d)
 * Pip - package-management system used to install and manage software packages written in Python
@@ -38,7 +38,7 @@ Finally on Selecting the ULB, you can see the wards under that particular ULB an
 - BeautifulSoup from bs4 library
     * $ pip install beautifulsoup4
     
-#Before creating the spider we'll create a rough algorithm listing the steps that our spider will traverse:
+# Before creating the spider we'll state a rough algorithm listing the steps that our spider will traverse:
 
 Fetch http://swachhbharaturban.gov.in/ihhl/RPTApplicationSummary.aspx
 * For each state found in the form's state list:
