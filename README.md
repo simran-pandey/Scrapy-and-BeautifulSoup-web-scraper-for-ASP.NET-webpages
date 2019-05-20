@@ -24,7 +24,7 @@ Finally on Selecting the ULB, you can see the wards under that particular ULB an
 
 ![](https://github.com/simran-pandey/Web-Scraper/blob/master/Screen%20captures/ss-7.PNG)
 
-# Requisite tools 
+# Languages, Tools and Frameworks Employed:
 * Python
     * Follow my tutorial [here](https://medium.com/@pandeysimran97/installing-anaconda-navigator-in-5-simple-steps-for-deep-learning-projects-c7c794f1768d)
 * Pip - package-management system used to install and manage software packages written in Python
@@ -48,4 +48,3 @@ Fetch http://swachhbharaturban.gov.in/ihhl/RPTApplicationSummary.aspx
 * For each ULB found in the resulting page:
     * Issue a POST request to RPTApplicationSummary.aspx passing the selected state, selected district, selected ULB and __VIEWSTATE value
 * Scrape the resulting pages ward wise appending data to a CSV file
-
