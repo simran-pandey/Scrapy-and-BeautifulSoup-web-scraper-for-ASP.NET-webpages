@@ -1,4 +1,6 @@
-# Web Scraper for aspx form based webpages
+# Web Scraper
+
+# Background
 
 Scraping aspx form based webpage is different and slightly complex than scraping the usual websites where you can generate a list of urls to be scraped. These websites usually send state data in requests and responses in order to keep track of the client's UI state.The __VIEWSTATE field is passed around with each POST request that the browser makes to the server. The server then decodes and loads the client's UI state from this data, performs some processing, computes the value for the new view state based on the new values and renders the resulting page with the new view state as a hidden field
 
@@ -38,7 +40,9 @@ Finally on Selecting the ULB, you can see the wards under that particular ULB an
 - BeautifulSoup from bs4 library
     * $ pip install beautifulsoup4
     
-# Before creating the spider we'll state a rough algorithm listing the steps that our spider will traverse:
+# Methodology 
+
+Before creating the spider we'll state a rough algorithm listing the steps that our spider will traverse:
 
 Fetch http://swachhbharaturban.gov.in/ihhl/RPTApplicationSummary.aspx
 * For each state found in the form's state list:
