@@ -1,14 +1,16 @@
 # Web Scraper
 
-# Background
+# Introduction
 
 Scraping aspx form based webpage is different and slightly complex than scraping the usual websites where you can generate a list of urls to be scraped. These websites usually send state data in requests and responses in order to keep track of the client's UI state.The __VIEWSTATE field is passed around with each POST request that the browser makes to the server. The server then decodes and loads the client's UI state from this data, performs some processing, computes the value for the new view state based on the new values and renders the resulting page with the new view state as a hidden field
 
 In this project we'll be scraping data from this website - http://swachhbharaturban.gov.in/ihhl/RPTApplicationSummary.aspx
 
-We are interested in creating a csv file where the scarped data will get saved with headers in this order		 	 	 	 	 	 	 	 	 
+We are interested in creating a csv file where the scraped data will get saved with headers in this order		 	 	 	 	 	 	 	 	 
 
 State | District | ULB Name | Ward | No. of Applications Received | No. of Applications Not Verified | No. of Applications Verified | No. of Applications Approved | No. of Applications Approved having Aadhar No. | No. of Applications Rejected | No. of Applications Pullback | No. of Applications Closed | No. of Constructed Toilet Photo | No. of Commenced Toilet Photo | No. of Constructed Toilet Photo through Swachhalaya
+
+# Background
 
 Pressing F12 opens up the developer window (Network tab)  
 
